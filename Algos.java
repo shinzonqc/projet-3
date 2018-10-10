@@ -473,11 +473,18 @@ class AlgoMm {
 			int nbcpmxmm, boolean toutBon, String md) {
 	
 		do {
+			
 			//Capture des essais
 			nbEssai++;
+			do {
 				Scanner sc = new Scanner(System.in);
-					System.out.print("Entrez votre essai n° " + nbEssai + "/"  + nbcpmxmm + " : ");
-				essai = sc.nextInt();
+				try{
+					System.out.print("Entrez votre essai n° " + nbEssai + "/"  + nbcpmxmm + " (4 chiffres entre 1 et 6) : ");
+					essai = sc.nextInt();
+					System.out.println(""); }
+				catch(RuntimeException ex){
+	           		System.out.println("Les caractères sont interdits ! : ");}
+			} while (essai > 6666 || essai < 1111);
 		
 				//Détection du parametre "mode développeur" et activation si à "o" (config.properties)
                 if (md.equals("o")) {
