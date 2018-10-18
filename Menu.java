@@ -70,7 +70,7 @@ public class Menu {
             if (choix2 == 3)
 
             try {
-                Cs.main(new String[0]);
+                Csduel.main(new String[0]);
             } catch (Exception e) {
                 e.printStackTrace();
             }

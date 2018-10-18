@@ -74,9 +74,9 @@ public class Csdef {
 				
          }	catch(RuntimeException ex){
            		System.out.println("Les caractères sont interdits ! : ");
-           		sc1.close(); }
+           		 }
 		 	
-		}while (codeSec > limite * 10-1 || codeSec < limite);//fin de boucle
+		}while (codeSec > limite * 10-1);//fin de boucle
 		
 		System.out.println("");
 		

@@ -128,7 +128,7 @@ public class Csduel {
 				
          }	catch(RuntimeException ex){
            		System.out.println("Les caractères sont interdits ! : ");
-           		sc1.close();
+           		
          }
 		    
 		} while (codeSec == nbCases.length() && codeSec < 10000);//fin de boucle
