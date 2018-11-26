@@ -648,12 +648,15 @@ class AlgoMm2 {
 class AlgoMm3 {
 	
 	 //Algo Mm3
-	public AlgoMm3 (int messai, int m, int compteur, int cessai, int c, int dessai, int d, int uessai, int u, int nbEssai, int nbcpmxmm,
-			int essai, int[] rand, int bon, boolean[] essaiBool, boolean[] randbool, int bonMais, boolean toutBon, String md) {
+	public AlgoMm3 (int nbchmxmm, int dmessai, int dm, int cmessai, int cm, int moessai, int mo, int dmoessai, int dmo, int cmoessai,
+			int cmo, int bessai, int b,int messai, int m, int compteur, int cessai, int c, int dessai, int d, int uessai, int u,
+			int nbEssai, int nbcpmxmm, int essai, long essai3, int[] rand, int bon, boolean[] essaiBool, boolean[] randbool, int bonMais,
+			boolean toutBon, String md) {
 	
 		 //Execution du programme
+		
 		do {
-			
+			if (nbchmxmm==4) {
 			if (messai < m) {
 				
         		System.out.println(" ");
@@ -735,13 +738,949 @@ class AlgoMm3 {
     			System.out.println("uessai  diminue = " + uessai);
     			System.out.println(" ");
     		}
+			}
+			
+			if (nbchmxmm==5) {
+				if (dmessai < dm) {
+					
+	        		System.out.println(" ");
+	        		System.out.println("dmessai = " + dmessai);
+	        		dmessai++;
+	        		compteur++;
+	        		System.out.println("dmessai  augmente = " + dmessai);
+	        		System.out.println(" ");
+				}
+	        	
+	        	else if (dmessai > dm) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("dmessai = " + dmessai);
+	        		dmessai--;
+	        		compteur++;
+	        		System.out.println("dmessai  diminue = " + dmessai);
+	        		System.out.println(" ");
+	        	}
+				
+				if (messai < m) {
+					
+	        		System.out.println(" ");
+	        		System.out.println("messai = " + messai);
+	        		messai++;
+	        		compteur++;
+	        		System.out.println("messai  augmente = " + messai);
+	        		System.out.println(" ");
+				}
+	        	
+	        	else if (messai > m) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("messai = " + messai);
+	        		messai--;
+	        		compteur++;
+	        		System.out.println("messai  diminue = " + messai);
+	        		System.out.println(" ");
+	        	}
+	        
+	    		
+	    		if (cessai < c) {
+	    			compteur++;
+	    			System.out.println(" ");
+	    			System.out.println("cessai = " + cessai);
+	    			cessai++;
+	    			compteur++;
+	    			System.out.println("cessai  augmente = " + cessai);
+	    			System.out.println(" ");
+	    			}
+	            
+	    		else if (cessai > c) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("cessai = " + cessai);
+	        		cessai--;
+	        		compteur++;
+	        		System.out.println("cessai  diminue = " + cessai);
+	        		System.out.println(" ");
+	        	}
+	        
+	    		if (dessai < d) {
+	    			compteur++;
+	    			System.out.println(" ");
+	    			System.out.println("dessai = " + dessai);
+	    			dessai++;
+	    			compteur++;
+	    			System.out.println("dessai  augmente = " + dessai);
+	    			System.out.println(" ");
+	    			}
+	    		
+	    		else if (dessai > d) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("dessai = " + dessai);
+	        		dessai--;
+	        		compteur++;
+	        		System.out.println("dessai  diminue = " + dessai);
+	        		System.out.println(" ");
+	        	}
+	    		
+	    	
+	    		if (uessai < u) {
+				compteur++;
+					System.out.println(" ");
+					System.out.println("uessai = " + uessai);
+					uessai++;
+					compteur++;
+					System.out.println("uessai  augmente = " + uessai);
+					System.out.println(" ");
+				}
+	     
+	    		else if (uessai > u) {
+	    		
+	    			System.out.println(" ");
+	    			System.out.println("uessai = " + uessai);
+	    			uessai--;
+	    			compteur++;
+	    			System.out.println("uessai  diminue = " + uessai);
+	    			System.out.println(" ");
+	    		}
+				}
+			
+			if (nbchmxmm==6) {
+				
+				if (cmessai < cm) {
+					
+	        		System.out.println(" ");
+	        		System.out.println("cmessai = " + cmessai);
+	        		cmessai++;
+	        		compteur++;
+	        		System.out.println("cmessai  augmente = " + cmessai);
+	        		System.out.println(" ");
+				}
+	        	
+	        	else if (cmessai > cm) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("cmessai = " + cmessai);
+	        		cmessai--;
+	        		compteur++;
+	        		System.out.println("cmessai  diminue = " + cmessai);
+	        		System.out.println(" ");
+	        	}
+				
+				if (dmessai < dm) {
+					
+	        		System.out.println(" ");
+	        		System.out.println("dmessai = " + dmessai);
+	        		dmessai++;
+	        		compteur++;
+	        		System.out.println("dmessai  augmente = " + dmessai);
+	        		System.out.println(" ");
+				}
+	        	
+	        	else if (dmessai > dm) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("dmessai = " + dmessai);
+	        		dmessai--;
+	        		compteur++;
+	        		System.out.println("dmessai  diminue = " + dmessai);
+	        		System.out.println(" ");
+	        	}
+				
+				if (messai < m) {
+					
+	        		System.out.println(" ");
+	        		System.out.println("messai = " + messai);
+	        		messai++;
+	        		compteur++;
+	        		System.out.println("messai  augmente = " + messai);
+	        		System.out.println(" ");
+				}
+	        	
+	        	else if (messai > m) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("messai = " + messai);
+	        		messai--;
+	        		compteur++;
+	        		System.out.println("messai  diminue = " + messai);
+	        		System.out.println(" ");
+	        	}
+	        
+	    		
+	    		if (cessai < c) {
+	    			compteur++;
+	    			System.out.println(" ");
+	    			System.out.println("cessai = " + cessai);
+	    			cessai++;
+	    			compteur++;
+	    			System.out.println("cessai  augmente = " + cessai);
+	    			System.out.println(" ");
+	    			}
+	            
+	    		else if (cessai > c) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("cessai = " + cessai);
+	        		cessai--;
+	        		compteur++;
+	        		System.out.println("cessai  diminue = " + cessai);
+	        		System.out.println(" ");
+	        	}
+	        
+	    		if (dessai < d) {
+	    			compteur++;
+	    			System.out.println(" ");
+	    			System.out.println("dessai = " + dessai);
+	    			dessai++;
+	    			compteur++;
+	    			System.out.println("dessai  augmente = " + dessai);
+	    			System.out.println(" ");
+	    			}
+	    		
+	    		else if (dessai > d) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("dessai = " + dessai);
+	        		dessai--;
+	        		compteur++;
+	        		System.out.println("dessai  diminue = " + dessai);
+	        		System.out.println(" ");
+	        	}
+	    		
+	    	
+	    		if (uessai < u) {
+				compteur++;
+					System.out.println(" ");
+					System.out.println("uessai = " + uessai);
+					uessai++;
+					compteur++;
+					System.out.println("uessai  augmente = " + uessai);
+					System.out.println(" ");
+				}
+	     
+	    		else if (uessai > u) {
+	    		
+	    			System.out.println(" ");
+	    			System.out.println("uessai = " + uessai);
+	    			uessai--;
+	    			compteur++;
+	    			System.out.println("uessai  diminue = " + uessai);
+	    			System.out.println(" ");
+	    		}
+				}
 
-
+			if (nbchmxmm==7) {
+				
+				if (moessai < mo) {
+					
+	        		System.out.println(" ");
+	        		System.out.println("moessai = " + moessai);
+	        		moessai++;
+	        		compteur++;
+	        		System.out.println("moessai  augmente = " + moessai);
+	        		System.out.println(" ");
+				}
+	        	
+	        	else if (moessai > mo) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("moessai = " + moessai);
+	        		moessai--;
+	        		compteur++;
+	        		System.out.println("moessai  diminue = " + moessai);
+	        		System.out.println(" ");
+	        	}
+				
+				if (cmessai < cm) {
+					
+	        		System.out.println(" ");
+	        		System.out.println("cmessai = " + cmessai);
+	        		cmessai++;
+	        		compteur++;
+	        		System.out.println("cmessai  augmente = " + cmessai);
+	        		System.out.println(" ");
+				}
+	        	
+	        	else if (cmessai > cm) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("cmessai = " + cmessai);
+	        		cmessai--;
+	        		compteur++;
+	        		System.out.println("cmessai  diminue = " + cmessai);
+	        		System.out.println(" ");
+	        	}
+				
+				if (dmessai < dm) {
+					
+	        		System.out.println(" ");
+	        		System.out.println("dmessai = " + dmessai);
+	        		dmessai++;
+	        		compteur++;
+	        		System.out.println("dmessai  augmente = " + dmessai);
+	        		System.out.println(" ");
+				}
+	        	
+	        	else if (dmessai > dm) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("dmessai = " + dmessai);
+	        		dmessai--;
+	        		compteur++;
+	        		System.out.println("dmessai  diminue = " + dmessai);
+	        		System.out.println(" ");
+	        	}
+				
+				if (messai < m) {
+					
+	        		System.out.println(" ");
+	        		System.out.println("messai = " + messai);
+	        		messai++;
+	        		compteur++;
+	        		System.out.println("messai  augmente = " + messai);
+	        		System.out.println(" ");
+				}
+	        	
+	        	else if (messai > m) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("messai = " + messai);
+	        		messai--;
+	        		compteur++;
+	        		System.out.println("messai  diminue = " + messai);
+	        		System.out.println(" ");
+	        	}
+	        
+	    		
+	    		if (cessai < c) {
+	    			compteur++;
+	    			System.out.println(" ");
+	    			System.out.println("cessai = " + cessai);
+	    			cessai++;
+	    			compteur++;
+	    			System.out.println("cessai  augmente = " + cessai);
+	    			System.out.println(" ");
+	    			}
+	            
+	    		else if (cessai > c) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("cessai = " + cessai);
+	        		cessai--;
+	        		compteur++;
+	        		System.out.println("cessai  diminue = " + cessai);
+	        		System.out.println(" ");
+	        	}
+	        
+	    		if (dessai < d) {
+	    			compteur++;
+	    			System.out.println(" ");
+	    			System.out.println("dessai = " + dessai);
+	    			dessai++;
+	    			compteur++;
+	    			System.out.println("dessai  augmente = " + dessai);
+	    			System.out.println(" ");
+	    			}
+	    		
+	    		else if (dessai > d) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("dessai = " + dessai);
+	        		dessai--;
+	        		compteur++;
+	        		System.out.println("dessai  diminue = " + dessai);
+	        		System.out.println(" ");
+	        	}
+	    		
+	    	
+	    		if (uessai < u) {
+				compteur++;
+					System.out.println(" ");
+					System.out.println("uessai = " + uessai);
+					uessai++;
+					compteur++;
+					System.out.println("uessai  augmente = " + uessai);
+					System.out.println(" ");
+				}
+	     
+	    		else if (uessai > u) {
+	    		
+	    			System.out.println(" ");
+	    			System.out.println("uessai = " + uessai);
+	    			uessai--;
+	    			compteur++;
+	    			System.out.println("uessai  diminue = " + uessai);
+	    			System.out.println(" ");
+	    		}
+				}
+			
+			if (nbchmxmm==8) {
+				
+				if (dmoessai < dmo) {
+					
+	        		System.out.println(" ");
+	        		System.out.println("dmoessai = " + dmoessai);
+	        		dmoessai++;
+	        		compteur++;
+	        		System.out.println("dmoessai  augmente = " + dmoessai);
+	        		System.out.println(" ");
+				}
+	        	
+	        	else if (dmoessai > dmo) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("dmoessai = " + dmoessai);
+	        		dmoessai--;
+	        		compteur++;
+	        		System.out.println("dmoessai  diminue = " + dmoessai);
+	        		System.out.println(" ");
+	        	}
+				
+				if (moessai < mo) {
+					
+	        		System.out.println(" ");
+	        		System.out.println("moessai = " + moessai);
+	        		moessai++;
+	        		compteur++;
+	        		System.out.println("moessai  augmente = " + moessai);
+	        		System.out.println(" ");
+				}
+	        	
+	        	else if (moessai > mo) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("moessai = " + moessai);
+	        		moessai--;
+	        		compteur++;
+	        		System.out.println("moessai  diminue = " + moessai);
+	        		System.out.println(" ");
+	        	}
+				
+				if (cmessai < cm) {
+					
+	        		System.out.println(" ");
+	        		System.out.println("cmessai = " + cmessai);
+	        		cmessai++;
+	        		compteur++;
+	        		System.out.println("cmessai  augmente = " + cmessai);
+	        		System.out.println(" ");
+				}
+	        	
+	        	else if (cmessai > cm) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("cmessai = " + cmessai);
+	        		cmessai--;
+	        		compteur++;
+	        		System.out.println("cmessai  diminue = " + cmessai);
+	        		System.out.println(" ");
+	        	}
+				
+				if (dmessai < dm) {
+					
+	        		System.out.println(" ");
+	        		System.out.println("dmessai = " + dmessai);
+	        		dmessai++;
+	        		compteur++;
+	        		System.out.println("dmessai  augmente = " + dmessai);
+	        		System.out.println(" ");
+				}
+	        	
+	        	else if (dmessai > dm) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("dmessai = " + dmessai);
+	        		dmessai--;
+	        		compteur++;
+	        		System.out.println("dmessai  diminue = " + dmessai);
+	        		System.out.println(" ");
+	        	}
+				
+				if (messai < m) {
+					
+	        		System.out.println(" ");
+	        		System.out.println("messai = " + messai);
+	        		messai++;
+	        		compteur++;
+	        		System.out.println("messai  augmente = " + messai);
+	        		System.out.println(" ");
+				}
+	        	
+	        	else if (messai > m) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("messai = " + messai);
+	        		messai--;
+	        		compteur++;
+	        		System.out.println("messai  diminue = " + messai);
+	        		System.out.println(" ");
+	        	}
+	        
+	    		
+	    		if (cessai < c) {
+	    			compteur++;
+	    			System.out.println(" ");
+	    			System.out.println("cessai = " + cessai);
+	    			cessai++;
+	    			compteur++;
+	    			System.out.println("cessai  augmente = " + cessai);
+	    			System.out.println(" ");
+	    			}
+	            
+	    		else if (cessai > c) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("cessai = " + cessai);
+	        		cessai--;
+	        		compteur++;
+	        		System.out.println("cessai  diminue = " + cessai);
+	        		System.out.println(" ");
+	        	}
+	        
+	    		if (dessai < d) {
+	    			compteur++;
+	    			System.out.println(" ");
+	    			System.out.println("dessai = " + dessai);
+	    			dessai++;
+	    			compteur++;
+	    			System.out.println("dessai  augmente = " + dessai);
+	    			System.out.println(" ");
+	    			}
+	    		
+	    		else if (dessai > d) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("dessai = " + dessai);
+	        		dessai--;
+	        		compteur++;
+	        		System.out.println("dessai  diminue = " + dessai);
+	        		System.out.println(" ");
+	        	}
+	    		
+	    	
+	    		if (uessai < u) {
+				compteur++;
+					System.out.println(" ");
+					System.out.println("uessai = " + uessai);
+					uessai++;
+					compteur++;
+					System.out.println("uessai  augmente = " + uessai);
+					System.out.println(" ");
+				}
+	     
+	    		else if (uessai > u) {
+	    		
+	    			System.out.println(" ");
+	    			System.out.println("uessai = " + uessai);
+	    			uessai--;
+	    			compteur++;
+	    			System.out.println("uessai  diminue = " + uessai);
+	    			System.out.println(" ");
+	    		}
+				}
+			
+			if (nbchmxmm==9) {
+				
+				if (cmoessai < cmo) {
+					
+	        		System.out.println(" ");
+	        		System.out.println("cmoessai = " + cmoessai);
+	        		cmoessai++;
+	        		compteur++;
+	        		System.out.println("cmoessai  augmente = " + cmoessai);
+	        		System.out.println(" ");
+				}
+	        	
+	        	else if (cmoessai > cmo) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("cmoessai = " + cmoessai);
+	        		cmoessai--;
+	        		compteur++;
+	        		System.out.println("cmoessai  diminue = " + cmoessai);
+	        		System.out.println(" ");
+	        	}
+				
+				if (dmoessai < dmo) {
+					
+	        		System.out.println(" ");
+	        		System.out.println("dmoessai = " + dmoessai);
+	        		dmoessai++;
+	        		compteur++;
+	        		System.out.println("dmoessai  augmente = " + dmoessai);
+	        		System.out.println(" ");
+				}
+	        	
+	        	else if (dmoessai > dmo) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("dmoessai = " + dmoessai);
+	        		dmoessai--;
+	        		compteur++;
+	        		System.out.println("dmoessai  diminue = " + dmoessai);
+	        		System.out.println(" ");
+	        	}
+				
+				if (moessai < mo) {
+					
+	        		System.out.println(" ");
+	        		System.out.println("moessai = " + moessai);
+	        		moessai++;
+	        		compteur++;
+	        		System.out.println("moessai  augmente = " + moessai);
+	        		System.out.println(" ");
+				}
+	        	
+	        	else if (moessai > mo) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("moessai = " + moessai);
+	        		moessai--;
+	        		compteur++;
+	        		System.out.println("moessai  diminue = " + moessai);
+	        		System.out.println(" ");
+	        	}
+				
+				if (cmessai < cm) {
+					
+	        		System.out.println(" ");
+	        		System.out.println("cmessai = " + cmessai);
+	        		cmessai++;
+	        		compteur++;
+	        		System.out.println("cmessai  augmente = " + cmessai);
+	        		System.out.println(" ");
+				}
+	        	
+	        	else if (cmessai > cm) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("cmessai = " + cmessai);
+	        		cmessai--;
+	        		compteur++;
+	        		System.out.println("cmessai  diminue = " + cmessai);
+	        		System.out.println(" ");
+	        	}
+				
+				if (dmessai < dm) {
+					
+	        		System.out.println(" ");
+	        		System.out.println("dmessai = " + dmessai);
+	        		dmessai++;
+	        		compteur++;
+	        		System.out.println("dmessai  augmente = " + dmessai);
+	        		System.out.println(" ");
+				}
+	        	
+	        	else if (dmessai > dm) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("dmessai = " + dmessai);
+	        		dmessai--;
+	        		compteur++;
+	        		System.out.println("dmessai  diminue = " + dmessai);
+	        		System.out.println(" ");
+	        	}
+				
+				if (messai < m) {
+					
+	        		System.out.println(" ");
+	        		System.out.println("messai = " + messai);
+	        		messai++;
+	        		compteur++;
+	        		System.out.println("messai  augmente = " + messai);
+	        		System.out.println(" ");
+				}
+	        	
+	        	else if (messai > m) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("messai = " + messai);
+	        		messai--;
+	        		compteur++;
+	        		System.out.println("messai  diminue = " + messai);
+	        		System.out.println(" ");
+	        	}
+	        
+	    		
+	    		if (cessai < c) {
+	    			compteur++;
+	    			System.out.println(" ");
+	    			System.out.println("cessai = " + cessai);
+	    			cessai++;
+	    			compteur++;
+	    			System.out.println("cessai  augmente = " + cessai);
+	    			System.out.println(" ");
+	    			}
+	            
+	    		else if (cessai > c) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("cessai = " + cessai);
+	        		cessai--;
+	        		compteur++;
+	        		System.out.println("cessai  diminue = " + cessai);
+	        		System.out.println(" ");
+	        	}
+	        
+	    		if (dessai < d) {
+	    			compteur++;
+	    			System.out.println(" ");
+	    			System.out.println("dessai = " + dessai);
+	    			dessai++;
+	    			compteur++;
+	    			System.out.println("dessai  augmente = " + dessai);
+	    			System.out.println(" ");
+	    			}
+	    		
+	    		else if (dessai > d) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("dessai = " + dessai);
+	        		dessai--;
+	        		compteur++;
+	        		System.out.println("dessai  diminue = " + dessai);
+	        		System.out.println(" ");
+	        	}
+	    		
+	    	
+	    		if (uessai < u) {
+				compteur++;
+					System.out.println(" ");
+					System.out.println("uessai = " + uessai);
+					uessai++;
+					compteur++;
+					System.out.println("uessai  augmente = " + uessai);
+					System.out.println(" ");
+				}
+	     
+	    		else if (uessai > u) {
+	    		
+	    			System.out.println(" ");
+	    			System.out.println("uessai = " + uessai);
+	    			uessai--;
+	    			compteur++;
+	    			System.out.println("uessai  diminue = " + uessai);
+	    			System.out.println(" ");
+	    		}
+				}
+			
+			if (nbchmxmm==10) {
+				
+				if (bessai < b) {
+					
+	        		System.out.println(" ");
+	        		System.out.println("bessai = " + bessai);
+	        		bessai++;
+	        		compteur++;
+	        		System.out.println("bessai  augmente = " + bessai);
+	        		System.out.println(" ");
+				}
+	        	
+	        	else if (bessai > b) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("bessai = " + bessai);
+	        		bessai--;
+	        		compteur++;
+	        		System.out.println("bessai  diminue = " + bessai);
+	        		System.out.println(" ");
+	        	}
+				
+				if (cmoessai < cmo) {
+					
+	        		System.out.println(" ");
+	        		System.out.println("cmoessai = " + cmoessai);
+	        		cmoessai++;
+	        		compteur++;
+	        		System.out.println("cmoessai  augmente = " + cmoessai);
+	        		System.out.println(" ");
+				}
+	        	
+	        	else if (cmoessai > cmo) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("cmoessai = " + cmoessai);
+	        		cmoessai--;
+	        		compteur++;
+	        		System.out.println("cmoessai  diminue = " + cmoessai);
+	        		System.out.println(" ");
+	        	}
+				
+				if (dmoessai < dmo) {
+					
+	        		System.out.println(" ");
+	        		System.out.println("dmoessai = " + dmoessai);
+	        		dmoessai++;
+	        		compteur++;
+	        		System.out.println("dmoessai  augmente = " + dmoessai);
+	        		System.out.println(" ");
+				}
+	        	
+	        	else if (dmoessai > dmo) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("dmoessai = " + dmoessai);
+	        		dmoessai--;
+	        		compteur++;
+	        		System.out.println("dmoessai  diminue = " + dmoessai);
+	        		System.out.println(" ");
+	        	}
+				
+				if (moessai < mo) {
+					
+	        		System.out.println(" ");
+	        		System.out.println("moessai = " + moessai);
+	        		moessai++;
+	        		compteur++;
+	        		System.out.println("moessai  augmente = " + moessai);
+	        		System.out.println(" ");
+				}
+	        	
+	        	else if (moessai > mo) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("moessai = " + moessai);
+	        		moessai--;
+	        		compteur++;
+	        		System.out.println("moessai  diminue = " + moessai);
+	        		System.out.println(" ");
+	        	}
+				
+				if (cmessai < cm) {
+					
+	        		System.out.println(" ");
+	        		System.out.println("cmessai = " + cmessai);
+	        		cmessai++;
+	        		compteur++;
+	        		System.out.println("cmessai  augmente = " + cmessai);
+	        		System.out.println(" ");
+				}
+	        	
+	        	else if (cmessai > cm) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("cmessai = " + cmessai);
+	        		cmessai--;
+	        		compteur++;
+	        		System.out.println("cmessai  diminue = " + cmessai);
+	        		System.out.println(" ");
+	        	}
+				
+				if (dmessai < dm) {
+					
+	        		System.out.println(" ");
+	        		System.out.println("dmessai = " + dmessai);
+	        		dmessai++;
+	        		compteur++;
+	        		System.out.println("dmessai  augmente = " + dmessai);
+	        		System.out.println(" ");
+				}
+	        	
+	        	else if (dmessai > dm) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("dmessai = " + dmessai);
+	        		dmessai--;
+	        		compteur++;
+	        		System.out.println("dmessai  diminue = " + dmessai);
+	        		System.out.println(" ");
+	        	}
+				
+				if (messai < m) {
+					
+	        		System.out.println(" ");
+	        		System.out.println("messai = " + messai);
+	        		messai++;
+	        		compteur++;
+	        		System.out.println("messai  augmente = " + messai);
+	        		System.out.println(" ");
+				}
+	        	
+	        	else if (messai > m) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("messai = " + messai);
+	        		messai--;
+	        		compteur++;
+	        		System.out.println("messai  diminue = " + messai);
+	        		System.out.println(" ");
+	        	}
+	        
+	    		
+	    		if (cessai < c) {
+	    			compteur++;
+	    			System.out.println(" ");
+	    			System.out.println("cessai = " + cessai);
+	    			cessai++;
+	    			compteur++;
+	    			System.out.println("cessai  augmente = " + cessai);
+	    			System.out.println(" ");
+	    			}
+	            
+	    		else if (cessai > c) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("cessai = " + cessai);
+	        		cessai--;
+	        		compteur++;
+	        		System.out.println("cessai  diminue = " + cessai);
+	        		System.out.println(" ");
+	        	}
+	        
+	    		if (dessai < d) {
+	    			compteur++;
+	    			System.out.println(" ");
+	    			System.out.println("dessai = " + dessai);
+	    			dessai++;
+	    			compteur++;
+	    			System.out.println("dessai  augmente = " + dessai);
+	    			System.out.println(" ");
+	    			}
+	    		
+	    		else if (dessai > d) {
+	        		
+	        		System.out.println(" ");
+	        		System.out.println("dessai = " + dessai);
+	        		dessai--;
+	        		compteur++;
+	        		System.out.println("dessai  diminue = " + dessai);
+	        		System.out.println(" ");
+	        	}
+	    		
+	    	
+	    		if (uessai < u) {
+				compteur++;
+					System.out.println(" ");
+					System.out.println("uessai = " + uessai);
+					uessai++;
+					compteur++;
+					System.out.println("uessai  augmente = " + uessai);
+					System.out.println(" ");
+				}
+	     
+	    		else if (uessai > u) {
+	    		
+	    			System.out.println(" ");
+	    			System.out.println("uessai = " + uessai);
+	    			uessai--;
+	    			compteur++;
+	    			System.out.println("uessai  diminue = " + uessai);
+	    			System.out.println(" ");
+	    		}
+				}
+			
 			//Capture des essais
 			nbEssai++;
+			if(nbchmxmm<10) {
 				Scanner sc = new Scanner(System.in);
 					System.out.print("Entrez votre essai n° " + nbEssai + "/"  + nbcpmxmm + " : ");
-				essai = sc.nextInt();
+				essai = sc.nextInt();}
+				
+			else if (nbchmxmm==10) {
+				Scanner sc = new Scanner(System.in);
+				System.out.print("Entrez votre essai n° " + nbEssai + "/"  + nbcpmxmm + " : ");
+				 essai3 = sc.nextLong();
+			}
 		
 				//Détection du parametre "mode développeur" et activation si à "o" (config.properties)
                 if (md.equals("o")) {
@@ -752,9 +1691,11 @@ class AlgoMm3 {
         //Transfer des valeurs de rand (int []) et essai (int) en string
 		String randString = Arrays.toString(rand).toString().replaceAll("\\D+", "");
 		String essaiString = String.valueOf(essai);
+		String longEssaiString = String.valueOf(essai3);
 		
 		//Détection et résolution des position : comptage des blancs et noirs
 		//Les noirs
+		if(nbchmxmm<10) {
 		for(int i=0;i<randString.length();i++){
 			if(randString.charAt(i)==essaiString.charAt(i)){
 				bon++;
@@ -769,12 +1710,30 @@ class AlgoMm3 {
 	        			randbool[j]=true;
 	        			essaiBool[k]=true; }
 	        	}
-	        	}
+	        	}}
+		
+		if(nbchmxmm==10) {
+			for(int i=0;i<randString.length();i++){
+				if(randString.charAt(i)==longEssaiString.charAt(i)){
+					bon++;
+					randbool[i]=true;
+					essaiBool[i]=true; }
+			}
+		        //Les blancs
+		        for(int k=0;k<longEssaiString.length();k++){
+		        	for(int j=0;j<randString.length();j++){
+		        		if(randString.charAt(j)==longEssaiString.charAt(k) && k!=j && randbool[j]==false && essaiBool[k]==false){
+		        			bonMais++;
+		        			randbool[j]=true;
+		        			essaiBool[k]=true; }
+		        	}
+		        	}}
 	        
 	       System.out.println("Vous avez "+bon+" bien placés et "+bonMais+" mal placés");
 	       System.out.println("");
 	       
 	       //Traitement du jeu
+	       if (nbchmxmm==4) {
 	       if (nbEssai == nbcpmxmm || bon == 4 || messai == m && cessai == c && dessai == d && uessai == u) {
         		toutBon = true; }
 	        
@@ -785,13 +1744,92 @@ class AlgoMm3 {
 				for(int i=0;i<randbool.length;i++){
 					randbool[i]=false;
 					essaiBool[i]=false;}
-	        	}
+	        	}}
+	       
+	       else if (nbchmxmm==5) {
+		       if (nbEssai == nbcpmxmm || bon == 5 || dmessai == dm && messai == m && cessai == c && dessai == d && uessai == u) {
+	        		toutBon = true; }
+		        
+		       else { 
+		        	
+		        	bon=0;
+					bonMais=0;
+					for(int i=0;i<randbool.length;i++){
+						randbool[i]=false;
+						essaiBool[i]=false;}
+		        	}}
+	       
+	       else if (nbchmxmm==6) {
+		       if (nbEssai == nbcpmxmm || bon == 6 || cmessai == cm && dmessai == dm && messai == m && cessai == c && dessai == d && uessai == u) {
+	        		toutBon = true; }
+		        
+		       else { 
+		        	
+		        	bon=0;
+					bonMais=0;
+					for(int i=0;i<randbool.length;i++){
+						randbool[i]=false;
+						essaiBool[i]=false;}
+		        	}}
+	       
+	       else if (nbchmxmm==7) {
+		       if (nbEssai == nbcpmxmm || bon == 7 || moessai == mo && cmessai == cm && dmessai == dm && messai == m && cessai == c && dessai == d && uessai == u) {
+	        		toutBon = true; }
+		        
+		       else { 
+		        	
+		        	bon=0;
+					bonMais=0;
+					for(int i=0;i<randbool.length;i++){
+						randbool[i]=false;
+						essaiBool[i]=false;}
+		        	}}
+	       
+	       else if (nbchmxmm==8) {
+		       if (nbEssai == nbcpmxmm || bon == 8 || dmoessai == dmo && moessai == mo && cmessai == cm && dmessai == dm && messai == m && cessai == c && dessai == d && uessai == u) {
+	        		toutBon = true; }
+		        
+		       else { 
+		        	
+		        	bon=0;
+					bonMais=0;
+					for(int i=0;i<randbool.length;i++){
+						randbool[i]=false;
+						essaiBool[i]=false;}
+		        	}}
+	       
+	       else if (nbchmxmm==9) {
+		       if (nbEssai == nbcpmxmm || bon == 9 || cmoessai == cmo && dmoessai == dmo && moessai == mo && cmessai == cm && dmessai == dm && messai == m && cessai == c && dessai == d && uessai == u) {
+	        		toutBon = true; }
+		        
+		       else { 
+		        	
+		        	bon=0;
+					bonMais=0;
+					for(int i=0;i<randbool.length;i++){
+						randbool[i]=false;
+						essaiBool[i]=false;}
+		        	}}
+	       
+	       else if (nbchmxmm==10) {
+		       if (nbEssai == nbcpmxmm || bon == 10 || bessai == b && cmoessai == cmo && dmoessai == dmo && moessai == mo && cmessai == cm && dmessai == dm && messai == m && cessai == c && dessai == d && uessai == u) {
+	        		toutBon = true; }
+		        
+		       else { 
+		        	
+		        	bon=0;
+					bonMais=0;
+					for(int i=0;i<randbool.length;i++){
+						randbool[i]=false;
+						essaiBool[i]=false;}
+		        	}}
 	        
 		}while (toutBon == false);
 		
 		 
 		
 		//Traitement fin de partie
+		if (nbchmxmm==4) {
 		if (bon == 4) {
 		System.out.println("Bravo, vous avez gagné !! \nVous avez deviné en " +nbEssai+ " coups.");
 		System.out.println(""); }
@@ -802,7 +1840,85 @@ class AlgoMm3 {
 		
 		else if (nbEssai == nbcpmxmm) {
 			System.out.println("Nous avons tous les 2 perdu... \nNombre maximum de coups (" +nbcpmxmm+ ") Atteint.");
+			System.out.println(""); }}
+		
+		else if (nbchmxmm==5) {
+			if (bon == 5) {
+			System.out.println("Bravo, vous avez gagné !! \nVous avez deviné en " +nbEssai+ " coups.");
 			System.out.println(""); }
+			
+			else if (dmessai == dm && messai == m && cessai == c && dessai == d && uessai == u) {
+			System.out.println("Désolé, vous avez perdu... \nJ'ai gagné en "+nbEssai+" coups.");
+			System.out.println(""); }
+			
+			else if (nbEssai == nbcpmxmm) {
+				System.out.println("Nous avons tous les 2 perdu... \nNombre maximum de coups (" +nbcpmxmm+ ") Atteint.");
+				System.out.println(""); }}
+		
+		else if (nbchmxmm==6) {
+			if (bon == 6) {
+			System.out.println("Bravo, vous avez gagné !! \nVous avez deviné en " +nbEssai+ " coups.");
+			System.out.println(""); }
+			
+			else if (cmessai == cm && dmessai == dm && messai == m && cessai == c && dessai == d && uessai == u) {
+			System.out.println("Désolé, vous avez perdu... \nJ'ai gagné en "+nbEssai+" coups.");
+			System.out.println(""); }
+			
+			else if (nbEssai == nbcpmxmm) {
+				System.out.println("Nous avons tous les 2 perdu... \nNombre maximum de coups (" +nbcpmxmm+ ") Atteint.");
+				System.out.println(""); }}
+		
+		else if (nbchmxmm==7) {
+			if (bon == 7) {
+			System.out.println("Bravo, vous avez gagné !! \nVous avez deviné en " +nbEssai+ " coups.");
+			System.out.println(""); }
+			
+			else if (moessai == mo && cmessai == cm && dmessai == dm && messai == m && cessai == c && dessai == d && uessai == u) {
+			System.out.println("Désolé, vous avez perdu... \nJ'ai gagné en "+nbEssai+" coups.");
+			System.out.println(""); }
+			
+			else if (nbEssai == nbcpmxmm) {
+				System.out.println("Nous avons tous les 2 perdu... \nNombre maximum de coups (" +nbcpmxmm+ ") Atteint.");
+				System.out.println(""); }}
+		
+		else if (nbchmxmm==8) {
+			if (bon == 8) {
+			System.out.println("Bravo, vous avez gagné !! \nVous avez deviné en " +nbEssai+ " coups.");
+			System.out.println(""); }
+			
+			else if (dmoessai == dmo && moessai == mo && cmessai == cm && dmessai == dm && messai == m && cessai == c && dessai == d && uessai == u) {
+			System.out.println("Désolé, vous avez perdu... \nJ'ai gagné en "+nbEssai+" coups.");
+			System.out.println(""); }
+			
+			else if (nbEssai == nbcpmxmm) {
+				System.out.println("Nous avons tous les 2 perdu... \nNombre maximum de coups (" +nbcpmxmm+ ") Atteint.");
+				System.out.println(""); }}
+		
+		else if (nbchmxmm==9) {
+			if (bon == 9) {
+			System.out.println("Bravo, vous avez gagné !! \nVous avez deviné en " +nbEssai+ " coups.");
+			System.out.println(""); }
+			
+			else if (cmoessai == cmo && dmoessai == dmo && moessai == mo && cmessai == cm && dmessai == dm && messai == m && cessai == c && dessai == d && uessai == u) {
+			System.out.println("Désolé, vous avez perdu... \nJ'ai gagné en "+nbEssai+" coups.");
+			System.out.println(""); }
+			
+			else if (nbEssai == nbcpmxmm) {
+				System.out.println("Nous avons tous les 2 perdu... \nNombre maximum de coups (" +nbcpmxmm+ ") Atteint.");
+				System.out.println(""); }}
+		
+		else if (nbchmxmm==10) {
+			if (bon == 10) {
+			System.out.println("Bravo, vous avez gagné !! \nVous avez deviné en " +nbEssai+ " coups.");
+			System.out.println(""); }
+			
+			else if (bessai == b && cmoessai == cmo && dmoessai == dmo && moessai == mo && cmessai == cm && dmessai == dm && messai == m && cessai == c && dessai == d && uessai == u) {
+			System.out.println("Désolé, vous avez perdu... \nJ'ai gagné en "+nbEssai+" coups.");
+			System.out.println(""); }
+			
+			else if (nbEssai == nbcpmxmm) {
+				System.out.println("Nous avons tous les 2 perdu... \nNombre maximum de coups (" +nbcpmxmm+ ") Atteint.");
+				System.out.println(""); }}
 	  } 
 }
 
